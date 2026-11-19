@@ -1,0 +1,5 @@
+2026-11-19 10:15:32.123 UTC [12345] app@prod LOG:  duration: 245.678 ms  statement: SELECT * FROM users WHERE email = 'alice@example.com';
+2026-11-19 10:15:33.010 UTC [12345] app@prod LOG:  duration: 180.120 ms  statement: SELECT * FROM users WHERE email = 'bob@example.com';
+2026-11-19 10:15:34.500 UTC [12346] app@prod LOG:  duration: 512.400 ms  execute <unnamed>: SELECT id, total FROM orders WHERE customer_name ILIKE '%smith%' ORDER BY created_at DESC;
+2026-11-19 10:15:35.200 UTC [12347] app@prod LOG:  duration: 95.300 ms  statement: SELECT id, name FROM products WHERE category_id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) LIMIT 50;
+2026-11-19 10:15:36.000 UTC [12348] app@prod LOG:  duration: 12.400 ms  statement: SELECT COUNT(*) FROM sessions WHERE active = TRUE;
